@@ -1,0 +1,662 @@
+
+/* animaciones */
+
+@keyframes example {
+    0%   { left:0px; top:0px;}
+    25%  { left:50px; top:0px;}
+    50%  { left:200px; top:100px;}
+    75%  { left:0px; top:100px;}
+    100% { left:0px; top:0px;}
+  }
+  @keyframes movimiento1 {
+    0%   { 
+        transform: translateY(-5%);
+    }
+    100% { 
+        transform: translateY(0%);
+    }
+  }
+
+  @keyframes movimiento2 {
+    0%   { 
+        transform: translateY(-40%);
+
+    }
+
+    100% { 
+        transform: translateX(-40%);
+    }
+  }
+
+  @keyframes movimiento3 {
+    0%   { 
+        transform: translateY(+30%);
+    }
+
+    100% { 
+        transform: translateX(+30%);
+    }
+  }
+
+@keyframes colores{
+    0%{background-color: rgb(51,87,224);}
+    25%{background-color: rgb(191,43,180);}
+    50%{background-color: rgb(139, 12, 108);}
+    75%{background-color: rgb(191,43,180);}
+    100%{background-color: rgb(51,87,224);}
+}
+
+@keyframes movimiento-portafolio {
+    from{
+        background-position: top left;
+    }to{
+        background-position: bottom  right;
+    }
+    
+
+}
+
+@keyframes vuelta {
+    from{
+        transform: rotate(0deg);
+        bottom: 0;
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    
+    to{
+        transform: rotate(360deg);
+        bottom: calc(100% + 20px);
+        opacity: 0;
+    }
+    
+
+}
+
+
+
+@keyframes zoom {
+    from{
+        -webkit-transform: scale(1.0); 
+        -moz-transform: scale(1.0);
+        -o-transform: scale(1.0);
+        transform: scale(1.0);
+        transform: scale(1.0);
+    }to{
+        -webkit-transform: scale(1.1); 
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    
+    
+
+}
+
+@keyframes animar-texto{
+    from{
+        transform: scale3d(1, 1, 1);
+    }
+    40%{
+        transform: scale3d(.75,.1.25,1);
+    }
+    50%{
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65%{
+        transform: scale3d(.95,1.05,1);
+    }
+    75%{
+        transform: scale3d(1.05,0.95,1);
+        color: #bb1c98;
+    }
+    to{
+        transform: scale3d(1, 1, 1);
+    }
+}
+.container-nav-logo{
+    background-color: rgba(255,255, 255, 0.7)!important;
+}
+div .navbar{
+    background-color: inherit!important;
+
+}
+
+.logo{
+    width: 150px;
+    height: auto;
+    content: url('./../images/logoazul.png');
+
+}
+
+/* .navbar .titulo-principal{
+    font-family: cooper-black-std, serif;
+    text-shadow: 0 0 5px rgba(0,0,0, .5);
+    font-size: 2rem;
+    animation: animar-texto 3s ease-in-out  infinite both ;
+} */
+
+
+
+header{
+    background-image: url('./../images/fondoheader.webp');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size:cover;
+
+}
+
+a.nav-link{
+    color: #000000!important;
+}
+
+ a.nav-link:hover{
+    color: #bb1c98!important;
+}
+
+#icono-facebook{
+    width: 30px ;
+    height: 30px ;
+    content: url('./../images/icon/facebook.png');
+}
+
+#icono-intagram{
+    width: 30px ;
+    height: 30px ;
+    content: url('./../images/icon/intragram.png');
+}
+#icono-linkerin{
+    width: 30px ;
+    height: 30px ;
+    content: url('./../images/icon/linkedin.png');
+}
+
+/* hover de iconos */
+#icono-facebook:hover{
+    content: url('./../images/icon/facebook1.png');
+}
+
+#icono-intagram:hover{
+    content: url('./../images/icon/intragram1.png');
+}
+#icono-linkerin:hover{
+    content: url('./../images/icon/linkedin1.png');
+}
+
+/* imagen header */
+
+div .header-columan2{
+    padding: 0 20%;
+    position: relative;
+
+}
+
+#imagen-principal{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    
+    z-index: 1;
+    animation: movimiento1 .8s alternate infinite ease-in;
+    border-radius: 50%;
+    content: url('./../images/prueba.jpg');
+}
+
+#imagen-objeto1{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 40%;
+    bottom: 10%;
+    z-index: 3;
+    animation: movimiento2 .9s alternate infinite ease-in;
+    content: url('./../images/animacion/objeto1.png');
+}
+
+#imagen-objeto2{
+    width: 100px;
+    height:100px;
+    position: absolute;
+    left: 80%;
+    bottom: 10%;
+    z-index: 2;
+    animation: movimiento2 .9s alternate infinite ease-in;
+    content: url('./../images/animacion/objeto3.png');
+}
+#imagen-objeto3{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 38%;
+    bottom: 50%;
+    z-index: 2;
+    animation: movimiento2 .9s alternate infinite ease-in;
+    content: url('./../images/animacion/objeto3.png');
+}
+
+#imagen-objeto4{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 85%;
+    z-index: 3;
+    animation: movimiento3 .9s alternate infinite ease-in;
+    content: url('./../images/animacion/objeto2.png');
+}
+
+#imagen-objeto5{
+    width: 100px;
+    height:100px;
+    position: absolute;
+    left: 65%;
+    bottom: 90%;
+    z-index: 2;
+    animation: movimiento3 .9s alternate infinite ease-in;
+    content: url('./../images/animacion/objeto3.png');
+}
+
+/* info-container */
+
+.info-container{
+
+}
+
+#imagen-info-fondo{
+    width: 400px;
+    height: 400px;;
+    content: url('./../images/fondoinfo.png');
+}
+
+.info-container-texto{
+    height: 400px;
+    position: relative;
+}
+
+#imagen-info-fondo{
+    width: 400px;
+    height: 400px;;
+    content: url('./../images/fondoinfo.png');
+}
+
+#imagen-info-fondo2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 10%;
+    bottom: 10%;
+    animation: movimiento1 .9s alternate infinite ease-in;
+    content: url('./../images/animacion/objeto2.png');
+}
+#imagen-info-diseño-web{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 20%;
+    content: url('./../images/info-diseño.gif');
+}
+
+
+/* portafolio */
+
+.portafolio{
+    background-image: url('./../images/fondoheader.webp');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size:cover;
+}
+
+.portafolio-info {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    animation: colores 10s infinite;
+}
+
+.portafolio-portada{
+    width: 100%;
+    height: 400px;
+    padding: 15%;
+    margin: 0;
+    position: relative;
+}
+
+.portada-fondo{
+    width: 70%;
+    height: 70%;
+    /* background-image: url('./../images/portafolio-portada.PNG'); */
+    background-size: 200%;
+    z-index: 2;
+    animation: movimiento-portafolio 10s infinite linear alternate; 
+    position: absolute;
+}
+
+.portafolio-grandient{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    background: -webkit-linear-gradient(left, black, rgb(0, 0, 0));
+    opacity: 0.2;
+}
+
+.portafolio-grandient2{
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    left: 20%;
+    bottom: 20%;
+    z-index: 1;
+    opacity: 0.9;
+    background: -webkit-linear-gradient(left, rgb(177, 12, 199), rgb(38, 13, 150));
+}
+
+/* grilla para mostrar portafolio */
+
+.portafolio-grid{
+    display: grid;
+    width: 100%;
+    height: 1000px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    
+}
+
+#item1{
+    grid-column:  span 1;
+    grid-row:  span 2;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    /* background-image: url('./../images/portafolio-portada.PNG'); */
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size:cover;
+    
+}
+#item2{
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: red;
+}
+#item3{
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: red;
+}
+#item4{
+
+
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: red;
+}
+#item5{
+    grid-column:  span 1;
+    grid-row:  span 2;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: red;
+}
+#item6{
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: red;
+}
+#item7{
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: red;
+}
+
+
+
+
+/* texto y zoom de portafolio */
+
+
+div .efecto-hover{
+    width: 100%;
+    height: 100%;
+    color: transparent;
+}
+
+
+
+
+div .efecto-hover:hover{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    color: white;
+    opacity: 0.8;
+    /* background: -webkit-linear-gradient(left, rgb(177, 12, 199), rgb(38, 13, 150)); */
+    background-color: #000000;
+}
+
+#item1:hover,
+#item2:hover,
+#item3:hover,
+#item4:hover,
+#item5:hover,
+#item6:hover,
+#item7:hover{
+
+    animation: zoom .8s reverse  ease-in;
+}
+
+
+
+    /*FOOTER*/
+
+    footer {
+        background: #16222A;
+        background: -webkit-linear-gradient(59deg, rgb(177, 12, 199), rgb(38, 13, 150));
+        background: linear-gradient(59deg, rgb(177, 12, 199), rgb(38, 13, 150));
+        color: white;
+        margin-top:100px;
+    }
+    
+    footer a {
+        color: #fff;
+        font-size: 14px;
+        transition-duration: 0.2s;
+    }
+    
+    footer a:hover {
+        color: #FA944B;
+        text-decoration: none;
+    }
+    
+    .copy {
+        font-size: 12px;
+        padding: 10px;
+        border-top: 1px solid #FFFFFF;
+    }
+    
+    .footer-middle {
+        padding-top: 2em;
+        color: white;
+    }
+    
+    /*SOCİAL İCONS*/
+    
+    /* footer social icons */
+    
+    ul.social-network {
+        list-style: none;
+        display: inline;
+        margin-left: 0 !important;
+        padding: 0;
+    }
+    
+    ul.social-network li {
+        display: inline;
+        margin: 0 5px;
+    }
+    
+    
+    /* footer social icons */
+    
+    .social-network a.icoFacebook:hover {
+        background-color: #3B5998;
+    }
+    
+    .social-network a.icoLinkedin:hover {
+        background-color: #007bb7;
+    }
+    
+    .social-network a.icoFacebook:hover i,
+    .social-network a.icoLinkedin:hover i {
+        color: #fff;
+    }
+    
+    .social-network a.socialIcon:hover,
+    .socialHoverClass {
+        color: #44BCDD;
+    }
+    
+    .social-circle li a {
+        display: inline-block;
+        position: relative;
+        margin: 0 auto 0 auto;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+    
+    .social-circle li i {
+        margin: 0;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    .social-circle li a:hover i,
+    .triggeredHover {
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -ms--transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+    
+    .social-circle i {
+        color: #595959;
+        -webkit-transition: all 0.8s;
+        -moz-transition: all 0.8s;
+        -o-transition: all 0.8s;
+        -ms-transition: all 0.8s;
+        transition: all 0.8s;
+    }
+    
+    .social-network a {
+        background-color: #F9F9F9;
+    }
+  
+/* ilustracion1 */
+
+.ilustration1{
+    display: block;
+    width: 90%;
+    height: 90%;
+    padding: 15px;
+}
+
+.ilustration1 #circulo1{
+    animation: movimiento1 .5s alternate infinite ease-in;
+    /* animation: movimientoCirculo 1s .5s both infinite; */
+}
+
+
+.ilustration1 #circulo2{
+    animation: movimiento1 .9s alternate infinite ease-in;
+    /* animation: movimientoCirculo 1s .5s both infinite; */
+}
+
+.ilustration1 #cuadro1{
+    transform: translate(2%, 2%);
+    /* animation: movimiento1 .9s alternate infinite ease-in; */
+    animation: movimientoCirculo 2s .5s both infinite alternate;
+}
+
+.ilustration1 #cuadro2{
+    transform: translate(-2%, -2%);
+    /* animation: movimiento1 .9s alternate infinite ease-in; */
+    animation: movimientoCirculo 2s  both infinite alternate;
+}
+
+.ilustration1 #laravel{
+    animation: aparecer 2s alternate infinite ease-in;
+
+}
+
+@keyframes movimientoCirculo{
+    100%{
+        transform: unset;
+    }
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0.9;
+    }
+    to{
+        opacity: 0.1;
+    }
+}
+
+/* texto header cambio con javascript y typed */
+
+.profesion{
+    font-weight: bold;
+    color: #bb1c98;
+    font-style: normal;
+    height: auto;
+}
+
+.escribir1{
+    position: relative;
+    width: 50px;
+    height: auto;
+    
+    background-image: url('./../images/animacion/escribir1.svg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size:cover;
+
+}
+
+.escribir2{
+    position: relative;
+    width: 50px;
+    height: auto;
+
+    background-image: url('./../images/animacion/escribir2.svg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size:cover;
+
+}
