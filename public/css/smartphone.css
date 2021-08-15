@@ -2,6 +2,7 @@
     
     /* animacion fondo portafolio */
 
+
     .container-fondo-portafolio{
         position: relative;
     }
@@ -171,6 +172,7 @@
 
 
 @media (max-width: 575.98px) { 
+
 
     .header-columan2{
         margin-bottom: 0;
