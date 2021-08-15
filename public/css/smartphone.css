@@ -102,6 +102,10 @@
     span.delay-6{
         animation-delay: 6s;
     }
+
+
+    /* espacido  info alto  */
+
 }
 
 /* menos de 575.88px */
@@ -167,6 +171,11 @@
 
 
 @media (max-width: 575.98px) { 
+
+    .header-columan2{
+        margin-bottom: 0;
+    }
+
     .portafolio-grid{
         height: 3000px;
         padding: 0 10%;
@@ -175,4 +184,22 @@
         column-gap: 30px;
         row-gap: 30px;
     }
+
+    #imagen-info-fondo{
+        width: 300px;
+        height:auto;;
+    }
+
+    .info-container-texto{
+        height: 200px;
+        display: flex;
+        align-items: center;
+        padding: 0 5%;
+    }
+
+    #imagen-info-fondo2{
+        width: 150px;
+        height: 150px;
+    }
+
  }

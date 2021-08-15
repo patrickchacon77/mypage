@@ -120,6 +120,35 @@
         transform: scale3d(1, 1, 1);
     }
 }
+
+@keyframes movimientoCirculo{
+    100%{
+        transform: unset;
+    }
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0.9;
+    }
+    to{
+        opacity: 0.1;
+    }
+}
+
+/* @keyframes cambiologo{
+    from{
+        content: url('./../images/logoazul.png');
+
+    }
+    to{
+        transition: opacity 1.5s ease-in-out;
+        content: url('./../images/logovioleta.png');;
+    }
+} */
+
+
+/* header */
 .container-nav-logo{
     background-color: rgba(255,255, 255, 0.7)!important;
 }
@@ -132,20 +161,46 @@ div .navbar{
     width: 150px;
     height: auto;
     content: url('./../images/logoazul.png');
+    animation: cambiologo 5s  infinite ease-in;
 
 }
-
-/* .navbar .titulo-principal{
-    font-family: cooper-black-std, serif;
-    text-shadow: 0 0 5px rgba(0,0,0, .5);
-    font-size: 2rem;
-    animation: animar-texto 3s ease-in-out  infinite both ;
-} */
-
 
 
 header{
     background-image: url('./../images/fondoheader.webp');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size:cover;
+
+}
+
+/* texto header cambio con javascript y typed */
+
+.profesion{
+    font-weight: bold;
+    color: #bb1c98;
+    font-style: normal;
+    height: auto;
+}
+
+.escribir1{
+    position: relative;
+    width: 50px;
+    height: auto;
+    
+    background-image: url('./../images/animacion/escribir1.svg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size:cover;
+
+}
+
+.escribir2{
+    position: relative;
+    width: 50px;
+    height: auto;
+
+    background-image: url('./../images/animacion/escribir2.svg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size:cover;
@@ -267,15 +322,20 @@ div .header-columan2{
 
 }
 
+
+
 #imagen-info-fondo{
     width: 400px;
-    height: 400px;;
+    height:auto;;
     content: url('./../images/fondoinfo.png');
 }
 
-.info-container-texto{
-    height: 400px;
+.info-container-imagen{
     position: relative;
+}
+
+.info-container-texto{
+    height: 100%;
 }
 
 #imagen-info-fondo{
@@ -330,7 +390,7 @@ div .header-columan2{
 .portada-fondo{
     width: 70%;
     height: 70%;
-    /* background-image: url('./../images/portafolio-portada.PNG'); */
+    background-image: url('./../images/info-fondo.jpg');
     background-size: 200%;
     z-index: 2;
     animation: movimiento-portafolio 10s infinite linear alternate; 
@@ -370,57 +430,50 @@ div .header-columan2{
     
 }
 
-#item1{
-    grid-column:  span 1;
-    grid-row:  span 2;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-    /* background-image: url('./../images/portafolio-portada.PNG'); */
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size:cover;
-    
-}
-#item2{
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-    background-color: red;
-}
-#item3{
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-    background-color: red;
-}
-#item4{
-
-
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-    background-color: red;
-}
-#item5{
-    grid-column:  span 1;
-    grid-row:  span 2;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-    background-color: red;
-}
-#item6{
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-    background-color: red;
-}
+#item1,
+#item2,
+#item3,
+#item4,
+#item5,
+#item6,
 #item7{
     width: 100%;
     height: 100%;
     z-index: 3;
-    background-color: red;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size:cover;
+}
+
+
+
+
+#item1{
+    grid-column:  span 1;
+    grid-row:  span 2;
+    background-image: url('./../images/portafolio/portafolio1.png');
+
+    
+}
+#item2{
+    background-image: url('./../images/portafolio/portafolio2.png');
+}
+#item3{
+    background-image: url('./../images/portafolio/portafolio3.png');
+}
+#item4{
+    background-image: url('./../images/portafolio/portafolio4.png');
+}
+#item5{
+    grid-column:  span 1;
+    grid-row:  span 2;
+    background-image: url('./../images/portafolio/portafolio5.png');
+}
+#item6{
+    background-image: url('./../images/portafolio/portafolio6.png');
+}
+#item7{
+    background-image: url('./../images/portafolio/portafolio7.png');
 }
 
 
@@ -613,50 +666,27 @@ div .efecto-hover:hover{
 
 }
 
-@keyframes movimientoCirculo{
-    100%{
-        transform: unset;
-    }
+
+.ilustration1 #facebook{
+    animation: movimiento1 .8s alternate infinite ease-in;
 }
 
-@keyframes aparecer{
-    from{
-        opacity: 0.9;
-    }
-    to{
-        opacity: 0.1;
-    }
-}
-
-/* texto header cambio con javascript y typed */
-
-.profesion{
-    font-weight: bold;
-    color: #bb1c98;
-    font-style: normal;
-    height: auto;
-}
-
-.escribir1{
-    position: relative;
-    width: 50px;
-    height: auto;
-    
-    background-image: url('./../images/animacion/escribir1.svg');
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size:cover;
+.ilustration1 #intagram{
+    animation: movimiento1 .9s alternate infinite ease-in;
 
 }
 
-.escribir2{
-    position: relative;
-    width: 50px;
-    height: auto;
+.ilustration1 #youtube{
+    animation: movimiento1 .7s alternate infinite ease-in;
 
-    background-image: url('./../images/animacion/escribir2.svg');
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size:cover;
-
+}
+footer .correo{
+    width: 20px ;
+    height: 20px ;
+    content: url('./../images/icon/correo.svg');
+}
+footer .linkerin-normal{
+    width: 20px ;
+    height: 20px ;
+    content: url('./../images/icon/linkerin3.svg');
 }
