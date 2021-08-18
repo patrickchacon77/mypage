@@ -1,5 +1,5 @@
 body{
-    background: #f1faff;
+    background: white;
 }
 
 .container_cards{
@@ -13,6 +13,7 @@ body{
 
 .card-hover{
     width: 300px;
+    height: 100%;
     margin: 10px;
     transition: all 300ms;
 }
@@ -35,12 +36,12 @@ body{
     position: relative;
     top: 40px;
     z-index: 1;
-    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.5 ));
+    /* filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.5 )); */
     transition: all 400ms;
 }
 
 .card-hover:hover .cover img{
-    filter: none;
+    /* filter: none; */
     top: 0px;
 }
 
@@ -60,17 +61,19 @@ body{
 }
 
 .card-hover:nth-of-type(1) .img_back{
-    background-image: url(../images/card/fondo1.jpg);
+    background-image: url(../images/card/fondo1.png);
 }
 .card-hover:nth-of-type(2) .img_back{
-    background-image: url(../images/card/fondo1.jpg);
+    background-image: url(../images/card/fondo1.png);
 }
 .card-hover:nth-of-type(3) .img_back{
-    background-image: url(../images/card/fondo1.jpg);
+    background-image: url(../images/card/fondo1.png);
 }
 
 .card-hover .description{
-    background-color: white;
+    text-align:center;
+
+    background-color:whitesmoke;
     margin-top: -10px;
     padding: 20px;
     border-radius: 0px 0px 20px 20px;
@@ -91,6 +94,7 @@ body{
 }
 
 .card-hover .description input{
+    text-align: center;
     cursor: pointer;
     border-radius: 8px;
     transition: all 300ms;
@@ -101,6 +105,43 @@ body{
 }
 
 
+#enlace-facebook,
+#enlace-intagram,
+#enlace-whatsapp,
+#enlace-correo,
+#enlace-telegram,
+#enlace-linkerin{
+    width: 30px ;
+    height: 30px ;
+}
+
+
+
+#enlace-whatsapp
+{
+    content: url('./../images/icon/whatsapp3.svg');
+}
+#enlace-facebook
+{
+    content: url('./../images/icon/facebook3.png');
+}
+#enlace-intagram
+{
+    content: url('./../images/icon/intragram1.png');
+}
+#enlace-linkerin
+{
+    content: url('./../images/icon/linkerin3.svg');
+}
+#enlace-correo
+{
+    content: url('./../images/icon/correo3.png');
+}
+
+#enlace-telegram
+{
+    content: url('./../images/icon/telegram3.png');
+}
 
 
 
