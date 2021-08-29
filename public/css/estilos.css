@@ -263,7 +263,7 @@ div .header-columan2{
     z-index: 1;
     animation: movimiento1 .8s alternate infinite ease-in;
     border-radius: 50%;
-    content: url('./../images/prueba.jpg');
+    content: url('./../images/foto.jpg');
 }
 
 #imagen-objeto1{
