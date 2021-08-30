@@ -131,31 +131,23 @@
         left: auto;
         z-index: 1;
         animation: movimiento1 .8s alternate infinite ease-in;
-        content: url('./../images/prueba.jpg');
+        content: url('./../images/foto.jpg');
     }
+
     #imagen-objeto1{
-        position: absolute;
-        left: 15%;
-        top: 70%;
+        display: none;
     }
     #imagen-objeto2{
-        position: absolute;
-        left: 70%;
-        top: 65%;
+        display: none;
     }
     #imagen-objeto3{
-        position: absolute;
-        left: 25%;
+        display: none;
     }
     #imagen-objeto4{
-        position: absolute;
-        left: 75%;
-        top: 15%;
+        display: none;
     }
     #imagen-objeto5{
-        position: absolute;
-        left: 55%;
-        top: 5%;
+        display: none;
     }
 
 
