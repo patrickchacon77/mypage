@@ -151,9 +151,78 @@ html, body {
 } */
 
 
+/* modo dark */
+body.dark{
+    background: #333333;
+    color: white;
+}
+
+
+body.dark header{
+    background-image: url('./../images/fondoheader\ black.png');
+}
+
+body.dark .container-nav-logo{
+    background-color: rgba(53, 53, 53, 0.7)!important;
+}
+
+body.dark nav{
+    background: none;
+}
+
+body.dark .navbar-toggler-icon{
+    background-image: url(./../images/icon/menu-dark.png);
+    background-position: center;
+}
+
+body.dark a.nav-link{
+    color: #ffffff!important;
+}
+
+body.dark a.nav-link:hover{
+    color: #8d1372!important;
+}
+
+body.dark .logo{
+    width: 150px;
+    height: auto;
+    content: url('./../images/logodark.png');
+}
+body.dark header .card{
+    background: #333333;
+}
+
+body.dark #icono-facebook{
+    content: url('./../images/icon/facebook1.png');
+}
+
+body.dark #icono-intagram{
+    content: url('./../images/icon/intragram1.png');
+}
+body.dark #icono-linkerin{
+    content: url('./../images/icon/linkedin1.png');
+}
+
+/* hover de iconos */
+body.dark #icono-facebook:hover{
+    content: url('./../images/icon/facebook3.png');  
+}
+body.dark #icono-intagram:hover{
+    content: url('./../images/icon/intragram.png');
+}
+body.dark #icono-linkerin:hover{
+    content: url('./../images/icon/linkerin3.svg');
+}
+
+
+/* body */
+body{
+    transition: .3s ease all;
+}
 /* header */
 .container-nav-logo{
     background-color: rgba(255,255, 255, 0.7)!important;
+    transition: .3s ease all;
 }
 div .navbar{
     background-color: inherit!important;
@@ -165,7 +234,7 @@ div .navbar{
     height: auto;
     content: url('./../images/logoazul.png');
     animation: cambiologo 5s  infinite ease-in;
-
+    transition: .3s ease all;
 }
 
 
@@ -174,10 +243,87 @@ header{
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size:cover;
+    transition: .3s ease all;
 
 }
 
+/* modo dark */
+.switch {
+    background: #343d5b;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    outline: none;
+}
+
+
+.switch span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;    
+    color: white;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 50%;
+    background-position: center;
+}	
+
+.switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.switch.active {
+    background-color: orange;
+    color: #111111;
+}
+
+.switch.active::after {
+    right: 0;
+    left: unset;
+}
+
+
+.switch span:nth-child(1){
+    background-image: url(./../images/icon/light.png);
+
+}
+
+.switch span:nth-child(2){
+    background-image: url(./../images/icon/dark.png);
+
+}
+
+
+
+
+
+
+
+
 /* texto header cambio con javascript y typed */
+
+header .card{
+    transition: .3s ease all;
+}
 
 .profesion{
     font-weight: bold;

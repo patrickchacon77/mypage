@@ -2,6 +2,16 @@ body{
     background: white;
 }
 
+/* modo dark */
+body.dark .description{
+    background: #4d4d4d;
+    color: white;
+}
+
+body.dark .modal-content{
+    background-color: #4d4d4d;
+}
+
 .container_cards{
     max-width: 1200px;
     margin: auto;
