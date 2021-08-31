@@ -1,0 +1,106 @@
+.about .container{
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+}
+
+
+.conainer-skill{
+    padding: 10px;
+}
+
+/* skill  */
+
+.conainer-skill .card-skills{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-color: #ffffff;
+    margin: 15px 0;
+    padding: 2% 5%;
+    border-radius: 25px;
+    /* box-shadow: 2px 2px 3px #cdced1,
+    -3px -3px 5px #fff; */
+
+}
+
+.card-skills p span{
+    position: absolute;
+    top: 35px;
+    transition: all 1s;
+}
+
+.card-skills  .skill{
+    display: inline-block;
+    width: 95%;
+    height: 10px;
+    border-radius: 25px;
+    background: none;
+    -moz-box-shadow:    inset 0 0 8px #bdbcbc;
+    -webkit-box-shadow: inset 0 0 8px #bdbcbc;
+    box-shadow:         inset 0 0 8px #bdbcbc;
+}
+
+
+
+
+.skill .progreso1,
+.skill .progreso2,
+.skill .progreso3,
+.skill .progreso4,
+.skill .progreso5,
+.skill .progreso6{
+    display: block;
+    position: relative;
+    margin: 3px 1%;
+    width: 0%;
+    height: 4px;
+    border-radius: 25px;
+    background-color: #343d5b;
+    transition: all 1s;
+}
+
+body.animation-skills .card-skills  .progreso1{
+    width: 70%;
+}
+body.animation-skills .card-skills body.animation-skills p .porcentaje1{
+    margin-left: 58% ;
+}
+
+body.animation-skills .card-skills .progreso2{
+    width: 80%;
+}
+body.animation-skills .card-skills p .porcentaje2{
+    margin-left: 68% ;
+}
+
+body.animation-skills .card-skills .progreso3{
+    width: 50%;
+}
+body.animation-skills .card-skills p .porcentaje3{
+    margin-left: 40% ;
+}
+
+body.animation-skills .card-skills .progreso4{
+    width: 90%;
+}
+body.animation-skills .card-skills p .porcentaje4{
+    margin-left: 76% ;
+}
+
+body.animation-skills .card-skills .progreso5{
+    width: 60%;
+}
+body.animation-skills .card-skills p .porcentaje5{
+    margin-left: 48% ;
+}
+
+body.animation-skills .card-skills .progreso6{
+    width: 70%;
+}
+body.animation-skills .card-skills p .porcentaje6{
+    margin-left: 58% ;
+}
+
+
+
+
