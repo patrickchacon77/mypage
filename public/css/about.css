@@ -1,12 +1,50 @@
+header{
+    background-image: url('./../images/fondoheader.webp');
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    transition: .3s ease all;
+
+}
+
 .about .container{
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.4);
     border-radius: 25px;
 }
+
+body.dark .about .container{
+    background: rgba(0, 0, 0, 0.2);
+}
+
 
 
 .conainer-skill{
     padding: 10px;
 }
+
+/* acerca de mí */
+
+.about-info .imagen-info{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    left: auto;
+    z-index: 1;
+    animation: movimiento1 .8s alternate infinite ease-in;
+    content: url('./../images/foto.jpg');
+    border-radius: 50%;
+}
+
+.about-info p{
+
+}
+
+/* .about-texto{
+    background-color: #1b1b1b;
+    border-radius: 50px;
+} */
+
+
 
 /* skill  */
 
@@ -21,6 +59,10 @@
     /* box-shadow: 2px 2px 3px #cdced1,
     -3px -3px 5px #fff; */
 
+}
+
+body.dark .conainer-skill .card-skills{
+    background-color: #1b1b1b;
 }
 
 .card-skills p span{
@@ -43,6 +85,15 @@
 
 
 
+body.dark .skill .progreso1,
+body.dark .skill .progreso2,
+body.dark .skill .progreso3,
+body.dark .skill .progreso4,
+body.dark .skill .progreso5,
+body.dark .skill .progreso6{
+    background-color: #ffffff;
+}
+
 .skill .progreso1,
 .skill .progreso2,
 .skill .progreso3,
@@ -59,10 +110,10 @@
     transition: all 1s;
 }
 
-body.animation-skills .card-skills  .progreso1{
+body.animation-skills .card-skills .progreso1{
     width: 70%;
 }
-body.animation-skills .card-skills body.animation-skills p .porcentaje1{
+body.animation-skills .card-skills  p .porcentaje1{
     margin-left: 58% ;
 }
 
@@ -100,6 +151,87 @@ body.animation-skills .card-skills .progreso6{
 body.animation-skills .card-skills p .porcentaje6{
     margin-left: 58% ;
 }
+
+/* experiencia */
+
+.col-education1{
+    height: 500px;
+    border-right: 2px solid #424242;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.col-education2{
+    height: 500px;
+    border-left: 2px solid #f0f0f0;
+    border-radius:  15px 0 0 15px;
+}
+
+
+body.dark .col-education2{
+    border-left: 2px solid #ffffff;
+}
+
+
+/* certificados */
+
+.container-certificado .certificado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 225px;
+    background-size: cover;  
+}
+
+.container-certificado .certificado .enlace{
+    display: flex;
+    padding: 10px 25px;
+    background-color: #1b1b1b00;
+    color: rgba(255, 255, 255, 0);
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 600ms;
+}
+
+.container-certificado .certificado:hover .enlace{
+    background-color: #1b1b1b;
+    color: white;
+}
+
+
+
+.container-certificado .certificado:nth-child(1){
+    background-image: url('./../images/certificados/certificado1.PNG');
+}
+.container-certificado .certificado:nth-child(2){
+    background-image: url('./../images/certificados/certificado2.PNG');
+}
+.container-certificado .certificado:nth-child(3){
+    background-image: url('./../images/certificados/certificado3.PNG');
+}
+.container-certificado .certificado:nth-child(4){
+    background-image: url('./../images/certificados/certificado4.PNG');
+}
+.container-certificado .certificado:nth-child(5){
+    background-image: url('./../images/certificados/certificado5.PNG');
+    background-size: 98%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container-certificado .certificado:nth-child(6){
+    background-image: url('./../images/certificados/certificado6.PNG');
+}
+.container-certificado .certificado:nth-child(7){
+    background-image: url('./../images/certificados/certificado7.PNG');
+}
+.container-certificado .certificado:nth-child(8){
+    background-image: url('./../images/certificados/certificado8.PNG');
+}
+.container-certificado .certificado:nth-child(9){
+    background-image: url('./../images/certificados/certificado9.PNG');
+}
+
+
 
 
 
