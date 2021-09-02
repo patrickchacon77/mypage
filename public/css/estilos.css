@@ -159,7 +159,7 @@ body.dark{
 
 
 body.dark header{
-    background-image: url('./../images/fondoheader\ black.png');
+    background-image: url('./../images/fondoheaderblack.webp');
 }
 
 body.dark .container-nav-logo{
@@ -183,7 +183,7 @@ body.dark a.nav-link:hover{
     color: #8d1372!important;
 }
 
-body.dark .logo{
+body.dark .logo-principal{
     width: 150px;
     height: auto;
     content: url('./../images/logodark.png');
@@ -230,12 +230,10 @@ div .navbar{
 
 }
 
-.logo{
+.logo-principal{
     width: 150px;
     height: auto;
     content: url('./../images/logoazul.png');
-    animation: cambiologo 5s  infinite ease-in;
-    transition: .3s ease all;
 }
 
 
@@ -477,7 +475,7 @@ div .header-columan2{
 #imagen-info-fondo{
     width: 400px;
     height:auto;;
-    content: url('./../images/fondoinfo.png');
+    content: url('./../images/fondoinfo.webp');
 }
 
 .info-container-imagen{
@@ -491,7 +489,7 @@ div .header-columan2{
 #imagen-info-fondo{
     width: 400px;
     height: 400px;;
-    content: url('./../images/fondoinfo.png');
+    content: url('./../images/fondoinfo.webp');
 }
 
 #imagen-info-fondo2{

@@ -204,31 +204,31 @@ body.dark .col-education2{
     background-image: url('./../images/certificados/certificado1.PNG');
 }
 .container-certificado .certificado:nth-child(2){
-    background-image: url('./../images/certificados/certificado2.PNG');
+    background-image: url('./../images/certificados/certificado2.png');
 }
 .container-certificado .certificado:nth-child(3){
-    background-image: url('./../images/certificados/certificado3.PNG');
+    background-image: url('./../images/certificados/certificado3.png');
 }
 .container-certificado .certificado:nth-child(4){
-    background-image: url('./../images/certificados/certificado4.PNG');
+    background-image: url('./../images/certificados/certificado4.png');
 }
 .container-certificado .certificado:nth-child(5){
-    background-image: url('./../images/certificados/certificado5.PNG');
+    background-image: url('./../images/certificados/certificado5.png');
     background-size: 98%;
     background-repeat: no-repeat;
     background-position: center;
 }
 .container-certificado .certificado:nth-child(6){
-    background-image: url('./../images/certificados/certificado6.PNG');
+    background-image: url('./../images/certificados/certificado6.png');
 }
 .container-certificado .certificado:nth-child(7){
-    background-image: url('./../images/certificados/certificado7.PNG');
+    background-image: url('./../images/certificados/certificado7.png');
 }
 .container-certificado .certificado:nth-child(8){
-    background-image: url('./../images/certificados/certificado8.PNG');
+    background-image: url('./../images/certificados/certificado8.png');
 }
 .container-certificado .certificado:nth-child(9){
-    background-image: url('./../images/certificados/certificado9.PNG');
+    background-image: url('./../images/certificados/certificado9.png');
 }
 
 
