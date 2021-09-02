@@ -2,7 +2,6 @@
     
     /* animacion fondo portafolio */
 
-
     .container-fondo-portafolio{
         position: relative;
     }
@@ -104,9 +103,6 @@
         animation-delay: 6s;
     }
 
-
-    /* espacido  info alto  */
-
 }
 
 /* menos de 575.88px */
@@ -195,5 +191,7 @@
         width: 150px;
         height: 150px;
     }
+
+
 
  }

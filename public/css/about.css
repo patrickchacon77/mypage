@@ -8,7 +8,7 @@ header{
 }
 
 .about .container{
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(207, 207, 207, 0.4);
     border-radius: 25px;
 }
 
@@ -155,13 +155,13 @@ body.animation-skills .card-skills p .porcentaje6{
 /* experiencia */
 
 .col-education1{
-    height: 500px;
+    height: 550px;
     border-right: 2px solid #424242;
     border-radius: 0px 15px 15px 0px;
 }
 
 .col-education2{
-    height: 500px;
+    height: 550px;
     border-left: 2px solid #f0f0f0;
     border-radius:  15px 0 0 15px;
 }
@@ -232,7 +232,32 @@ body.dark .col-education2{
 }
 
 
+/* responsive */
 
+
+@media (max-width: 767.98px) {
+  /* página acerca de. seción experiencia   */
+        .col-education1{
+            height: 750px;
+            
+        }
+        .col-education2{
+            height: 750px;
+        
+        }
+}
+
+@media (max-width: 576px) {
+  /* página acerca de. seción experiencia   */
+        .col-education1{
+            height: 850px;
+            
+        }
+        .col-education2{
+            height: 850px;
+        
+        }
+}
 
 
 
